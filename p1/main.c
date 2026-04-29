@@ -4,7 +4,7 @@
 
 int main()
 {
-    int N; int i=1; int j=2; int k=1; int answer=0;
+    int N; int i=1; int j=2; int k=1; bool answer=false;
     
     scanf("%d",&N);
     
@@ -19,13 +19,13 @@ int main()
                     if(i>k || j>k){
                         printf("%d %d %d\n",i,j,k);
                         
-                        answer++;
+                        bool answer=true;
                     }
                 }
             }     
         }
     }
-   if(answer==0){
+   if(answer!=true){
     printf("none");
    }
 
